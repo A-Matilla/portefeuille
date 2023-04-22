@@ -2,6 +2,247 @@
 {
     margin: 0;
     padding: 0;
-    list-style: none;
+    box-sizing: border-box;
     text-decoration: none;
+    list-style: none;
 }
+
+html
+{
+    font-size: 16px;
+    width: 100%;
+    height: 100%;
+    font-family: sans-serif;
+}
+
+body
+{
+    width: 100%;
+    height: 100%;
+}
+
+header
+{
+    position: fixed;
+    display: inline-block;
+    width: 100%;
+    height: 7%;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+}
+
+div.flou
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+}
+
+div.nav-complet
+{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+div.nav-complet nav
+{
+    display: flex;
+    justify-content: flex-end;
+    width: 50%;
+}
+
+div.nav-complet nav ul
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+div.nav-complet nav ul li
+{
+    padding-right: 10%;
+}
+
+main.page-un
+{
+    display: grid;
+    grid-template-columns: 10% 30% 1fr;
+    grid-template-rows: 1fr 60% 1fr;
+    width: 100%;
+    height: 100%;
+    background-image: url(/sources/img/wallpaperbetter.com_1920x1080.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+div.panneau 
+{ 
+    grid-area: 2 / 2 / 3 / 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2a283d;
+    border-radius: 10px;
+}
+
+div.panneau .sous-panneau
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 95%;
+    height: 95%;
+    border-radius: 8px;
+    border: 2px solid #f9c2c7;
+}
+
+div.panneau .sous-panneau .align-panneau
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    height: 90%;
+}
+
+div.panneau .sous-panneau h1
+{
+    color: #f9c2c7;
+    text-transform: uppercase;
+    margin-top: 10%;
+}
+
+div.panneau .sous-panneau .description-panneau
+{
+    margin-top: 5%;
+}
+
+div.panneau .sous-panneau .description-panneau p
+{
+    color: #FFFFFF;
+    letter-spacing: 1px;
+    line-height: 30px;
+}
+
+div.panneau .sous-panneau .align-panneau .button-panneau
+{
+    position: relative;
+    right: 10%;
+    margin-top: 15%;
+}
+
+div.panneau .sous-panneau .align-panneau .button-panneau a
+{
+    background-color: #f9c2c7;
+    color: #212121;
+    font-weight: 600;
+    padding: 30% 100%;
+    border-radius: 10px;
+}
+
+main.page-deux
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-image: url(/sources/img/wallpaperbetter.com_1920x1080\ \(1\).jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+main.page-deux div.carrousel
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 70%;
+    width: 85%;
+    gap: 15px;
+}
+
+main.page-deux div.carrousel div.image-carrousel
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #212121;
+    width: 24%;
+    height: 49%;
+}
+
+main.page-deux div.carrousel div.image-carrousel div.image-1,
+div.image-2,
+div.image-3,
+div.image-4,
+div.image-5,
+div.image-6,
+div.image-7,
+div.image-8
+{
+    width: 90%;
+    height: 90%;
+    background-size: cover;
+    cursor: pointer;
+    transition: all 400ms ease-in-out; 
+}
+
+div.image-1 { background-image: url(/sources/img/wallpaperbetter.com_800x600.jpg); }
+div.image-2 { background-image: url(/sources/img/wallpaperbetter.com_800x600\ \(1\).jpg); }
+div.image-3 { background-image: url(/sources/img/wallpaperbetter.com_800x600\ \(2\).jpg); }
+div.image-4 { background-image: url(/sources/img/wallpaperbetter.com_800x600\ \(3\).jpg); }
+div.image-5 { background-image: url(/sources/img/wallpaperbetter.com_800x600\ \(4\).jpg); }
+div.image-6 { background-image: url(/sources/img/wallpaperbetter.com_800x600\ \(5\).jpg); }
+div.image-7 { background-image: url(/sources/img/wallpaperbetter.com_800x600\ \(6\).jpg); }
+div.image-8 { background-image: url(/sources/img/wallpaperbetter.com_800x600\ \(7\).jpg); }
+
+main.page-deux div.carrousel div.image-carrousel div.image-1:hover,
+div.image-2:hover,
+div.image-3:hover,
+div.image-4:hover,
+div.image-5:hover,
+div.image-6:hover,
+div.image-7:hover,
+div.image-8:hover
+{
+    width: 100%;
+    height: 100%;
+}
+
+footer.fin-page
+{
+    display: grid;
+    grid-template-columns: 10% 1fr 10%;
+    grid-template-rows: 1fr 50% 10%;
+    width: 100%;
+    height: 100%;
+    background-image: url(/sources/img/wallpaperbetter.com_1920x1080\ \(2\).jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+    
+footer.fin-page .formulaire-fin-page 
+{ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: 2 / 2 / 3 / 3;
+    background-color: #bf604a;
+    border-radius: 10px;
+}
+
+footer.fin-page .formulaire-fin-page .sous-formulaire
+{
+    width: 95%;
+    height: 85%;
+    border-radius: 7px;
+    border: 2px solid #276d6b;
+} 
+
+.div2 { grid-area: 3 / 1 / 4 / 4; }
